@@ -1,4 +1,4 @@
-export const mockData = {
+const mockData = {
   0: {
     id: '2469bdab-23b5-4cb8-90c9-c609a49410b0',
     name: 'Richard Paul M.',
@@ -6289,3 +6289,5 @@ export const mockData = {
     level: 0,
   },
 };
+
+export default mockData;
