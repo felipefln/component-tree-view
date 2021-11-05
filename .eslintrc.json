@@ -28,6 +28,7 @@
     "arrow-body-style": 0,
     "react/self-closing-comp": 0,
     "import/prefer-default-export": 0,
-    "jsx-a11y/label-has-associated-control": 0
+    "jsx-a11y/label-has-associated-control": 0,
+    "no-constant-condition": 0
   }
 }
