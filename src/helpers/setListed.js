@@ -1,14 +1,13 @@
-import React from 'react';
-import mackData from '../services/api.js';
+import mockData from '../services/api';
 
 const newItem = {};
 
 function setListed() {
-  Object.values(mackData).map((i) => changeList({ item: i, key: i.id, parent: null }));
+  Object.values(mockData).map((i) => ChangeList({ item: i, key: i.id, parent: null }));
 
-  function changeList({ item, parent }) {
+  function ChangeList({ item, parent }) {
     let child = false;
-    if (item.children[0] != undefined) {
+    if (item.children[0] !== undefined) {
       child = true;
     }
 
@@ -22,7 +21,7 @@ function setListed() {
     };
 
     if ([item.children] && [item.children.length]) {
-      Object.values(item.children).map((i) => changeList({ item: i, key: i.id, parent: item.id }));
+      Object.values(item.children).map((i) => ChangeList({ item: i, key: i.id, parent: item.id }));
     }
   }
   return newItem;
